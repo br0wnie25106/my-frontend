@@ -1,8 +1,11 @@
-// app/page.tsx
+"use client";
+import { useEffect } from "react";
+import { getGameState } from "@/lib/api";
+
 export default function Home() {
-  return (
-    <main className="min-h-screen p-10">
-      <h1>Hello from working homepage 🎉</h1>
-    </main>
-  );
+  useEffect(() => {
+    getGameState().then(console.log).catch(console.error);
+  }, []);
+
+  return <h1>Testing fetch...</h1>;
 }
