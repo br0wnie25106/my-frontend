@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080/api"
+const BASE_URL = "https://demo-backend-o2g6.onrender.com"
 
 export async function getGameState() {
   const res = await fetch(`${BASE_URL}/game/state`)
