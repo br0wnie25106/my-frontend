@@ -1,4 +1,4 @@
-const BASE_URL = "https://demo-backend-o2g6.onrender.com"
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL!;
 
 export async function getGameState() {
   const res = await fetch(`${BASE_URL}/game/state`)
