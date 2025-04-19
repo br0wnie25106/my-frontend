@@ -1,3 +1,8 @@
+// app/page.tsx
 export default function Home() {
-  return <h1>Hello from Blackjack!</h1>;
+  return (
+    <main className="min-h-screen p-8">
+      <h1>Hello from Blackjack Frontend 👋</h1>
+    </main>
+  );
 }
