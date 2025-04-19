@@ -1,8 +1,8 @@
 // app/page.tsx
-import { BlackjackSimulator } from "@/components/BlackjackSimulator";
-
-
 export default function Home() {
-  return <BlackjackSimulator />;
+  return (
+    <main className="min-h-screen p-10">
+      <h1>Hello from working homepage 🎉</h1>
+    </main>
+  );
 }
-
