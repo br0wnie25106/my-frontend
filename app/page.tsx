@@ -1,9 +1,3 @@
-import { BlackjackSimulator } from "@/components/BlackjackSimulator"
-
 export default function Home() {
-  return (
-    <main className="min-h-screen">
-      <BlackjackSimulator />
-    </main>
-  )
+  return <h1>Hello from Blackjack!</h1>;
 }
