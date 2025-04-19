@@ -1,11 +1,9 @@
-"use client";
-import { useEffect } from "react";
-import { getGameState } from "@/lib/api";
+import { BlackjackSimulator } from "@/components/BlackjackSimulator"
 
 export default function Home() {
-  useEffect(() => {
-    getGameState().then(console.log).catch(console.error);
-  }, []);
-
-  return <h1>Testing fetch...</h1>;
+  return (
+    <main className="min-h-screen">
+      <BlackjackSimulator />
+    </main>
+  )
 }
